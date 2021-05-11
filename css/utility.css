@@ -1,0 +1,42 @@
+.text-primary{
+  color: #28a745;
+}
+.text-secondary{
+  color: #0284d0;
+}
+.text-ind1{
+  color: orange;
+} 
+.text-ind2{
+  color: green;
+}
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  padding: 10px 30px;
+  background-color: #28a745;
+  border-radius: 10%;
+  border: none;
+}
+.btn:hover{
+  opacity: 0.9;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1
+}
+.icon{
+  color: #f4f4f4;
+}
+.font-span{
+  font-size: 25px;
+}

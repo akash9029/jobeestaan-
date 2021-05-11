@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: azure;
+  color: #333;
+  line-height: 1.6;
+}
+ul{
+  list-style: none;
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+h1, h2{
+  font-weight:300;
+  line-height: 1.2;
+}
+
+p{
+  margin: 10px;
+}
+img{
+  width: 100%;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+}
+.navbar a{
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.navbar ul{
+  display: flex;
+}
+.navbar a:hover{
+  border-bottom: #28a745 2px solid;
+}
+.navbar #logo{
+  font-weight: 400px;
+}
+
+/*Index Page*/
+
+.home{
+  background: url('/Project/Jobestaan/image_resources/home/showcase.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+.home .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0px 20px;
+}
+.home .content h1{
+  font-size: 55px;
+}
+.home .content p{
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0;
+}
+.home::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+.home *{
+  z-index: 10;
+}
+.main-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 0;
+}
+.main-content i{
+  background-color: #28a745;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+.main-content h2{
+  font-weight: bold;
+}
+.main-column .flex-column .flex-column1, 
+.main-column .flex-column .flex-column2{
+  height: 100%;
+} 
+
+.main-column .flex-column .flex-column2{
+  background-color: #28a745;
+  color: white;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+.main-column .flex-column .flex-column2 #flex-btn{
+  margin-top: 20px;
+  border: white 1px solid;
+}
+.main-column .flex-column1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row-flex{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.column-flex{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.row-flex h2{
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 50px;
+  color: #28a745;
+}
+.row-flex .form-control{
+  width: 100%;
+  padding-bottom: 20px ;
+  margin-left: 20px;
+}
+.row-flex .form-control input{
+  padding: 10px;
+  width: 300px;
+}
+.row-flex .form-control textarea{
+  padding: 10px;
+  width: 300px;
+  height: 120px;
+  overflow: auto;
+}
+.row-flex .column-flex a{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.row-flex .form-control input:focus{
+  border: #28a745 1px solid;
+}
+
+/*About Page*/
+#home1{
+  background: url(/Project/Jobestaan/image_resources/blog/blog1.jpg) no-repeat center center/cover;
+  height: 500px;
+}
+.about-content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.about-content .about-div1,
+.about-content .about-div2{
+  width: 50%;
+  height: 100%;
+  padding-bottom: 0;
+}
+
+.about-content .about-div1{
+  padding: 20px;
+}
+.team{
+  margin-top: 0;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  color: #28a745;
+  background-color: #bcbcbc;
+}
+#employee-about{
+  background-color: #bcbcbc;
+}
+#employee-about .main1 img,
+#employee-about .main2 img{
+  border-radius: 50%;
+  width: 80%;
+  margin: auto;
+}
+#employee-about .main1 h2,
+#employee-about .main1 h2{
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+/*Vacancy Page*/
+#home2{
+  background: url(/Project/Jobestaan/image_resources/blog/blog2.jpg) no-repeat center center/cover;
+  height: 500px;
+}
+.vacancy-div{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+.vacancy-div .vacancy-div1, 
+.vacancy-div .vacancy-div2{
+  width: 50%;
+  height: 100%;
+  padding: 10px 30px;
+}
+
+
+
+/*Contact Page*/
+
+#home3{
+  background: url(/Project/Jobestaan/image_resources/blog/blog3.jpg) no-repeat center center/cover;
+  height: 500px;
+}
+.contact-div{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.contact-div .contact-form,
+.contact-div .contact-address{
+  width: 50%;
+  height: 100%;
+  padding: 10px 20px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.contact-form .form-control{
+  margin-bottom: 15PX;
+}
+.contact-form .form-control input{
+  width: 50%;
+  height: 40px;
+  padding: 4px;
+  border-radius: 10px;
+  border: cadetblue 1px solid;
+}
+.contact-form .form-control textarea{
+  width: 50%;
+  height: 120px;
+  border-radius: 10px;
+  padding: 4px;
+  border: cadetblue 1px solid;
+}
+.contact-div h1, .contact-address h1{
+  margin: 15px 0px;
+  font-weight:bold ;
+}
+.contact-address{
+  width: 100%;
+  padding: 15;
+}
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.contact-content{
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #bcbcbc;
+}
+.contact-icon{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contact-icon .icon{
+  margin-top: 5px;
+  padding: 0px 20px;
+}
+.contact-form .form-control input:focus,
+.contact-form .form-control textarea:focus{
+  outline-color: #28a745;
+  border-radius: 10px;
+}
+
+
+/*Media Query*/
+@media(max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    height: 100px;
+    padding: 10px;
+  }
+  .navbar a{
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .main-content{
+    font-size: 1rem;
+  }
+  .main-content{
+    flex-direction: column;
+  }
+  .home .content h1{
+    font-size: 35px;
+  }
+  .home .content p{
+    font-size: 20px;
+  }
+  .main-column .flex-column{
+    flex: 100%;
+    max-width: 100%;
+  }
+  .main-column .flex-column .flex-column2{
+    padding-top: 20px;
+  }
+  .main-column .flex-column .flex-column2 a{
+    padding: 5px 10px;
+    margin-bottom: 15px;
+  }
+  
+  /*About*/
+
+  .about-content{
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .about-content .about-div1,
+  .about-content .about-div2{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .about-content .about-div2{
+    padding-top: 10px;
+  }
+  #employee-about{
+    margin-top: 0px;
+  }
+  #employee-about .main2 img{
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .team{
+    margin-bottom: 0;
+    padding-bottom: 0; 
+    padding-top: 15px;
+    font-size: 30px;
+  }
+
+
+
+  /*Contact Form*/
+  .contact-form .form-control input{
+    width: 80%;
+    height: 40px;
+    padding: 4px;
+    border: cadetblue 1px solid;
+  }
+  .contact-form .form-control textarea{
+    width: 80%;
+    height: 120px;
+    padding: 4px;
+    border: cadetblue 1px solid;
+  }
+  .contact-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+ .contact-div .contact-form, 
+ .contact-div .contact-address{
+   width: 100%;
+   height: 100%;
+ }
+}
+.footer{
+  background-color: #333;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 5px 0px;
+  margin-bottom: 0;
+}
+.footer p{
+  margin-top: 5px;
+}
+
+
