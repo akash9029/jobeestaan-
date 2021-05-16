@@ -61,7 +61,7 @@ img{
 /*Index Page*/
 
 .home{
-  background: url('/Project/Jobestaan/image_resources/home/showcase.jpg') no-repeat center center/cover;
+  background: url('/image_resources/home/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: white;
@@ -176,7 +176,7 @@ img{
 
 /*About Page*/
 #home1{
-  background: url(/Project/Jobestaan/image_resources/blog/blog1.jpg) no-repeat center center/cover;
+  background: url(/image_resources/blog/blog1.jpg) no-repeat center center/cover;
   height: 500px;
 }
 .about-content{
@@ -200,21 +200,25 @@ img{
   text-align: center;
   font-weight: bold;
   font-size: 45px;
-  color: #28a745;
-  background-color: #bcbcbc;
+  color: azure;
+  background-color: #5c5f58;
 }
-#employee-about{
-  background-color: #bcbcbc;
+#about-employee{
+  background-color: #adadad;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-#employee-about .main1 img,
-#employee-about .main2 img{
+#about-employee .about-div1 img{
+  width: 50%;
+  height: 320px;
   border-radius: 50%;
-  width: 80%;
-  margin: auto;
 }
-#employee-about .main1 h2,
-#employee-about .main1 h2{
-  padding-top: 20px;
+#about-employee .about-div2 img{
+  padding-top: 0px;
+  width: 45%;
+  height: 310px;
+  border-radius: 50%;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -222,12 +226,12 @@ img{
 
 /*Vacancy Page*/
 #home2{
-  background: url(/Project/Jobestaan/image_resources/blog/blog2.jpg) no-repeat center center/cover;
+  background: url(/image_resources/blog/blog2.jpg) no-repeat center center/cover;
   height: 500px;
 }
 .vacancy-div{
   display: flex;
-  height: 100%;
+  height: 10%;
   width: 100%;
   margin-top: 20px;
 }
@@ -237,13 +241,23 @@ img{
   height: 100%;
   padding: 10px 30px;
 }
-
+.vacancy-div .job-div{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: left;
+  justify-content: left;
+}
+.vacancy-div .job-div #p2{
+  padding-left: 90px;
+  padding-right: 20px;
+}
 
 
 /*Contact Page*/
 
 #home3{
-  background: url(/Project/Jobestaan/image_resources/blog/blog3.jpg) no-repeat center center/cover;
+  background: url(/image_resources/blog/blog3.jpg) no-repeat center center/cover;
   height: 500px;
 }
 .contact-div{
@@ -322,6 +336,51 @@ img{
   outline-color: #28a745;
   border-radius: 10px;
 }
+.form-control button{
+  padding: 10px 30px;
+}
+
+
+
+
+
+/*FormSubmission*/
+#form-submit{
+  background: url('/image_resources/blog/blog4.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+#form-submit .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0px 20px;
+}
+#form-submit .content h1{
+  font-size: 55px;
+}
+#form-submit::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+.home *{
+  z-index: 10;
+}
+#form-submit #submit-div h1{
+  font-size: 45px;
+  text-align: center;
+  padding: 30px 40px;
+}
+
 
 
 /*Media Query*/
@@ -359,8 +418,36 @@ img{
     margin-bottom: 15px;
   }
   
-  /*About*/
 
+  /*Vacancies*/
+  .vacancy-div{
+    padding-bottom: 30px;
+  }
+  .vacancy-div .job-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .vacancy-div .job-div #p2{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 15px;
+  }
+
+
+
+  /*About*/
+  .about-div2{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .about-div2 img{
+    height: 300px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .about-content{
     display: flex;
     flex-direction: column;
@@ -372,30 +459,41 @@ img{
   }
   .about-content .about-div1,
   .about-content .about-div2{
-    margin-top: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
     width: 100%;
     height: 100%;
   }
   .about-content .about-div2{
     padding-top: 10px;
   }
-  #employee-about{
-    margin-top: 0px;
+  #about-employee .about-div1 img{
+    width: 50%;
+    height: 40%;
+    border-radius: 50%;
   }
-  #employee-about .main2 img{
-    margin-top: 40px;
-    margin-bottom: 0;
+  #about-employee .about-div2 img{
+    width: 45%;
+    height: 200px;
+    border-radius: 50%;
+  }
+  #about-employee .about-div2 p{
+    padding-bottom: 20px;
   }
   .team{
     margin-bottom: 0;
-    padding-bottom: 0; 
-    padding-top: 15px;
+    padding-bottom: 5px; 
+    padding-top: 10px;
     font-size: 30px;
   }
 
 
 
   /*Contact Form*/
+  .contact-form{
+    text-align: center;
+    align-items: center;
+  }
   .contact-form .form-control input{
     width: 80%;
     height: 40px;
@@ -419,6 +517,9 @@ img{
    width: 100%;
    height: 100%;
  }
+ #form-submit #submit-div h1{
+   font-size: 30px;
+ } 
 }
 .footer{
   background-color: #333;
