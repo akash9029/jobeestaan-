@@ -543,6 +543,9 @@ img{
 .footer i{
   size: 12px;
 }
+.contact-content{
+  font-size: 13px;
+}
 }
 .footer{
   background-color: #333;
