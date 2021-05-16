@@ -8,7 +8,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: azure;
+  background-color: #F8F8FF;
   color: #333;
   line-height: 1.6;
 }
@@ -433,8 +433,21 @@ img{
     margin-top: 0px;
     padding-top: 0px;
     padding-left: 0px;
-    padding-right: 15px;
+    padding-right: 20px;
+    font-size: 13px;
   }
+  .vacancy-div .job-div #p1{
+    margin-right: 0px;
+    font-size: 13px;
+  }
+  .vacancy-div1 h2,
+  .vacancy-div2 h2{
+    font-size: 20px;
+  }
+  .vacancy-div1 p{
+    font-size: 13px;
+  }
+
 
 
 
@@ -520,6 +533,13 @@ img{
  #form-submit #submit-div h1{
    font-size: 30px;
  } 
+ .footer p{
+  margin-top: 5px;
+  font-size: 12px;
+}
+.footer i{
+  size: 12px;
+}
 }
 .footer{
   background-color: #333;
@@ -528,8 +548,6 @@ img{
   padding: 5px 0px;
   margin-bottom: 0;
 }
-.footer p{
-  margin-top: 5px;
-}
+
 
 
