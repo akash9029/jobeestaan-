@@ -10,6 +10,9 @@
 .text-ind2{
   color: green;
 }
+.text-third{
+  color: #285598;
+}
 .btn{
   cursor: pointer;
   display: inline-block;
